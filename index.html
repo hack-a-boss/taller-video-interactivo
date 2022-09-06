@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Princess Bride</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="video">
+        <video
+          src="/media/video/trailer.webm"
+          poster="/media/img/poster.webp"
+        ></video>
+      </section>
+      <section class="data"></section>
+      <section class="controls faded">
+        <button class="play">Play</button>
+        <button class="pause" hidden>Pause</button>
+        <progress value="0" max="100"></progress>
+        <p>
+          <time class="current">00:00</time> /
+          <time class="duration">--:--</time>
+        </p>
+        <button class="fullscreen">Full Screen</button>
+      </section>
+    </main>
+
+    <script src="/js/main.js" type="module"></script>
+  </body>
+</html>

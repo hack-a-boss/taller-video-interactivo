@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.faded {
+  opacity: 0;
+}
+
+section.video,
+section.data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+section.data ul li {
+  list-style: none;
+  margin: 1rem;
+  background-color: #4a5859;
+  font-size: 2rem;
+  padding: 1rem;
+  max-width: 20rem;
+}
+
+section.video video {
+  width: 100vw;
+  height: 100vh;
+}
+
+section.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  transition: 500ms;
+}
+
+section.controls button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.controls button.play {
+  background-image: url(/media/img/play.svg);
+}
+
+section.controls button.pause {
+  background-image: url(/media/img/pause.svg);
+}
+
+section.controls button.fullscreen {
+  background-image: url(/media/img/fullscreen.svg);
+}
+
+section.controls progress {
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+
+section.controls p {
+  margin-right: 1rem;
+}
+
+section.controls progress[value] {
+  appearance: none;
+  height: 0.75rem;
+}
