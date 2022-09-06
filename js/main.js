@@ -1,4 +1,3 @@
-import { events } from "./events.js";
 import { getEvents, secondsToDuration } from "./helpers.js";
 
 const app = document.querySelector("main");
